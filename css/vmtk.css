@@ -2,7 +2,8 @@
 body {
   margin:0px; 
   background-color:#3d5c7a;
-  font-family:Georgia,Arial,Helvetica,sans-serif; font-size:11pt;
+  /*font-family:Georgia,Arial,Helvetica,sans-serif; font-size:11pt;*/
+  font-family:Arial,Helvetica,sans-serif; font-size:11pt;
 }
 
 /* These control the fixed-width text elements of the page */
@@ -26,7 +27,8 @@ h6 { font-size:1.0em; }
 
 #vmtkmaintitle { 
   margin-top:30px; padding:10px; border-bottom:1px #cccccc solid;
-  font-family:Georgia,Verdana,sans-serif; font-weight:bold; font-size:180%; 
+  /*font-family:Georgia,Verdana,sans-serif; font-weight:bold; font-size:180%; */
+  font-family:Verdana,sans-serif; font-weight:bold; font-size:180%; 
 }
 #vmtkmaintitle a {text-decoration:none; color:white; }
 #vmtkmaintitle a:hover {text-decoration:underline; color:white; }
@@ -34,7 +36,8 @@ h6 { font-size:1.0em; }
 /* This controls the rest of the heading (primarily the search box) */
 #vmtkhead { 
   position:absolute; right:10px; top:10px; 
-  font-family:Georgia,Verdana,sans-serif; font-size:85%; 
+  /*font-family:Georgia,Verdana,sans-serif; font-size:85%; */
+  font-family:Verdana,sans-serif; font-size:85%; 
   color:white;
 }
 #vmtkhead input { font-size:85%; } 
@@ -46,7 +49,9 @@ h6 { font-size:1.0em; }
   width:155px; 
   padding:6px; border-right:1px #cccccc solid; 
   line-height:1.33em;
-  font-size:9.4pt; font-family:Georgia,Verdana,sans-serif;
+  font-size:9.4pt; 
+  /*font-family:Georgia,Verdana,sans-serif;*/
+  font-family:Verdana,sans-serif;
   background-color:#e6dfcf;
 }
 #vmtkleft .vspace { margin-top:1.125em; }
@@ -72,7 +77,8 @@ h6 { font-size:1.0em; }
 /* These affect the lines at the very bottom. */
 #vmtkfoot { 
   padding-left:178px; padding-bottom:4px; border-top:1px #cccccc solid;
-  font-family:Georgia,Verdana,sans-serif; font-size:80%; 
+  /*font-family:Georgia,Verdana,sans-serif; font-size:80%; */
+  font-family:Verdana,sans-serif; font-size:80%; 
   color:white;
 }
 #vmtkfoot a {text-decoration:none; color:white; }
