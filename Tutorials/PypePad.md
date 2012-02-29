@@ -22,7 +22,7 @@ If you are on Windows simply run vmtk-exe.py located in your VMTK installation d
 
 The window shown in *Figure 1* will appear, layout may vary depending on your platform and system settings:
 
-![Figure 1: Pypepad](http://www.vmtk.org/pmwiki/uploads/Tutorials/pypepad1.png)
+![Figure 1: Pypepad](/media/Tutorials/pypepad1.png)
 *Figure 1: Pypepad*
 
 ## The Pypepad environment

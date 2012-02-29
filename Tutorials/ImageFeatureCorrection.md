@@ -26,7 +26,7 @@ The next step is to select a volume of interest. If you look at the object using
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure1](http://www.vmtk.org/pmwiki/uploads/Tutorials/Jansen_location.png)| ![Figure2](http://www.vmtk.org/pmwiki/uploads/Tutorials/Jansen_voi.png) 
+|![Figure1](/media/Tutorials/Jansen_location.png)| ![Figure2](/media/Tutorials/Jansen_voi.png) 
 |*Figure 1: location of the aneurysm*	          | *Figure 2: Volume of Interest selection*
 
 ---
@@ -66,9 +66,9 @@ When creating the levelsets of bone and air, it is wise to choose a relatively s
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure3](http://www.vmtk.org/pmwiki/uploads/Tutorials/Jansen_bonelvlset.png)| ![Figure4](http://www.vmtk.org/pmwiki/uploads/Tutorials/Jansen_airlvlset.png) 
+|![Figure3](/media/Tutorials/Jansen_bonelvlset.png)| ![Figure4](/media/Tutorials/Jansen_airlvlset.png) 
 |*Figure 3: Bone levelset*	          | *Figure 4: Air levelset*
-|![Figure5](http://www.vmtk.org/pmwiki/uploads/Tutorials/Jansen_comblvlset.png)|
+|![Figure5](/media/Tutorials/Jansen_comblvlset.png)|
 |*Figure 5: Bone and Air levelsets combined*	          |
 
      vmtkimagevoiselector -ifile image_volume_voi.vti -ofile image_volume_voi_2.vti
@@ -104,7 +104,7 @@ In this composed image the positions of the gradients you want to mask can be se
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure7](http://www.vmtk.org/pmwiki/uploads/Tutorials/Jansen_original.png)|![Figure8](http://www.vmtk.org/pmwiki/uploads/Tutorials/Jansen_altered.png)
+|![Figure7](/media/Tutorials/Jansen_original.png)|![Figure8](/media/Tutorials/Jansen_altered.png)
 |*Figure 7: Original feature image*|*Figure 8: Altered feature image*
 
 Figure 7 shows the original feature image, figure 8 shows the altered one. In the latter figure you can see that some areas are brighter compared to figure 7. This is caused by the application of the sigmoid function

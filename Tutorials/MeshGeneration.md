@@ -22,7 +22,7 @@ Surface remeshing is performed under the assumption that the surface requires im
 
 After the surface has been remeshed the volume is filled with a combination of tetrahedral and prismatic elements. This task relies on algorithms based on Tetgen. The parameter -volumeelementfactor is used to control the size of the tetrahedral mesh and it represents a proportionality constant between the local surface edge length and the element volume. There's is another option involved in Volume meshing, it's the Boundary Layer. By activating it we can heighten the density of the mesh near the wall. We can adda a boundary layer by using the -boundarylayer option . The thickness of this layer can be specified through the -thicknessfactor parameter. 
 
-![Figure 1](http://www.vmtk.org/pmwiki/uploads/Tutorials/image1.png)
+![Figure 1](/media/Tutorials/image1.png)
 
 *Figure 1: A generic uncapped surface. We will refer to it as foo.vtp*
 
