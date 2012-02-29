@@ -10,7 +10,7 @@ These are a bunch of tutorials on the use of vmtk. The first group is about the 
 ## Infrastructure
 
 - [Vmtk Scripts](/Tutorials/ScriptsBasic/) - learn how to run vmtk scripts
-- [Using Pypepad](/Tutorials/Pypepad/) - learn how to use Pypepad
+- [Using Pypepad](/Tutorials/PypePad/) - learn how to use Pypepad
 - [Basic PypeS Tutorial](/Tutorials/PypesBasic) - learn how to effectively pipe vmtk scripts together
 - [Use PypeS Programmatically](/Tutorials/PypesProgrammatically/) - learn how to interactively work with PypeS objects
 - [Advanced PypeS Tutorial](/Tutorials/PypesAdvanced/) - learn how to write your own PypeS modules
