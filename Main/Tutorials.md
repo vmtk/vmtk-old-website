@@ -33,6 +33,6 @@ These are a bunch of tutorials on the use of vmtk. The first group is about the 
 
 ## Tutorial data
 
-- [Aorta_voi.zip](Aorta_voi.zip)
+- [Aorta_voi.zip](/media/Main/Aorta_voi.zip)
 - [OsiriX DICOM sample image sets](http://pubimage.hcuge.ch:8080/)
 
