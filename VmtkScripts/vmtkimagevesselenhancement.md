@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<h1>vmtkimagevesselenhancement</h1>
+<h2>Description</h2>
+compute a feature image for use in segmentation
+<h3>Input arguments</h3>
+<table class="vmtkscripts">
+<tr>
+<th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
+</tr>
+<tr><td>id</td><td>Id</td><td>str</td><td>1</td><td></td><td>0</td><td>script id</td>
+</tr>
+<tr><td>handle</td><td>Self</td><td>self</td><td>1</td><td></td><td></td><td>handle to self</td>
+</tr>
+<tr><td>disabled</td><td>Disabled</td><td>bool</td><td>1</td><td></td><td>0</td><td>disable execution and piping</td>
+</tr>
+<tr><td>i</td><td>Image</td><td>vtkImageData</td><td>1</td><td></td><td></td><td>the input image</td>
+</tr>
+<tr><td>ifile</td><td>ImageInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Image reader</td>
+</tr>
+<tr><td>method</td><td>Method</td><td>str</td><td>1</td><td>["frangi","sato","ved","vedm"]</td><td>frangi</td><td></td>
+</tr>
+<tr><td>sigmamin</td><td>SigmaMin</td><td>float</td><td>1</td><td>(0.0,)</td><td>1.0</td><td></td>
+</tr>
+<tr><td>sigmamax</td><td>SigmaMax</td><td>float</td><td>1</td><td>(0.0,)</td><td>1.0</td><td></td>
+</tr>
+<tr><td>sigmasteps</td><td>NumberOfSigmaSteps</td><td>int</td><td>1</td><td>(0,)</td><td>1</td><td></td>
+</tr>
+<tr><td>stepmethod</td><td>SigmaStepMethod</td><td>str</td><td>1</td><td>["equispaced","logarithmic"]</td><td>equispaced</td><td></td>
+</tr>
+<tr><td>alpha1</td><td>Alpha1</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.5</td><td>(sato)</td>
+</tr>
+<tr><td>alpha2</td><td>Alpha2</td><td>float</td><td>1</td><td>(0.0,)</td><td>2.0</td><td>(sato)</td>
+</tr>
+<tr><td>alpha</td><td>Alpha</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.5</td><td>(frangi, ved, vedm)</td>
+</tr>
+<tr><td>beta</td><td>Beta</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.5</td><td>(frangi, ved, vedm)</td>
+</tr>
+<tr><td>gamma</td><td>Gamma</td><td>float</td><td>1</td><td>(0.0,)</td><td>5.0</td><td>(frangi, ved, vedm)</td>
+</tr>
+<tr><td>c</td><td>C</td><td>float</td><td>1</td><td>(0.0,)</td><td>1e-06</td><td>(ved)</td>
+</tr>
+<tr><td>timestep</td><td>TimeStep</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.01</td><td>(ved, vedm)</td>
+</tr>
+<tr><td>epsilon</td><td>Epsilon</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.01</td><td>(ved, vedm)</td>
+</tr>
+<tr><td>wstrength</td><td>WStrength</td><td>float</td><td>1</td><td>(0.0,)</td><td>25.0</td><td>(ved, vedm)</td>
+</tr>
+<tr><td>sensitivity</td><td>Sensitivity</td><td>float</td><td>1</td><td>(0.0,)</td><td>5.0</td><td>(ved, vedm)</td>
+</tr>
+<tr><td>iterations</td><td>NumberOfIterations</td><td>int</td><td>1</td><td>(0,)</td><td>0</td><td>(ved, vedm)</td>
+</tr>
+<tr><td>subiterations</td><td>NumberOfDiffusionSubIterations</td><td>int</td><td>1</td><td>(1,)</td><td>0</td><td>(ved, vedm)</td>
+</tr>
+<tr><td>ofile</td><td>ImageOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Image writer</td>
+</tr>
+</table><h3>Output arguments</h3>
+<table class="vmtkscripts">
+<tr>
+<th>Argument</th><th>Variable</th><th>Type</th><th>Length</th><th>Range</th><th>Default</th><th>Description</th>
+</tr>
+<tr><td>id</td><td>Id</td><td>str</td><td>1</td><td></td><td>0</td><td>script id</td>
+</tr>
+<tr><td>handle</td><td>Self</td><td>self</td><td>1</td><td></td><td></td><td>handle to self</td>
+</tr>
+<tr><td>o</td><td>Image</td><td>vtkImageData</td><td>1</td><td></td><td></td><td>the output image</td>
+</tr>
+</table>

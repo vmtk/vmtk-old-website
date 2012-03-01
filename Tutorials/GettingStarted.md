@@ -2,8 +2,6 @@
 layout: default
 ---
 
-[Tutorials](http://www.vmtk.org/Tutorials)/Getting Started
-
 Getting Started
 ===============
 

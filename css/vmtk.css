@@ -84,6 +84,32 @@ h6 { font-size:1.0em; }
 #vmtkfoot a {text-decoration:none; color:white; }
 #vmtkfoot a:hover {text-decoration:underline; color:white; }
 
+.vmtkscripts {
+  border-width: 2px 2px 2px 2px;
+  border-style: solid;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-color: #333333;
+}
+
+.vmtkscripts th {
+  font-size:90%;
+  padding: 4px;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  text-align: left;
+  border-color: #333333;
+}
+
+.vmtkscripts td {
+  font-size:90%;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  margin: 0;
+  padding: 4px;
+  border-color: #333333;
+}
+
 /* These affect the printed appearance of the web view (not the separate
 ** print view) of pages.  The sidebar and action links aren't printed. */
 @media print {
