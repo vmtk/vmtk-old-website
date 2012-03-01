@@ -2,12 +2,10 @@
 layout: default
 ---
 
-[Tutorials](http://www.vmtk.org/Tutorials)/ImageBasedModelling
-
 Image-based modeling
 ====================
 
-This tutorial demonstrates how to generate an image based surface model from a vti image. If you are not sure about how to create or adjust a vti image please refer to the [Getting Started](http://www.vmtk.org/Tutorials/GettingStarted) section.
+This tutorial demonstrates how to generate an image based surface model from a vti image. If you are not sure about how to create or adjust a vti image please refer to the [Getting Started](/Tutorials/GettingStarted) section.
 
 ## Level Sets
 

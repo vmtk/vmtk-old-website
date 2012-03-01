@@ -2,14 +2,12 @@
 layout: default
 ---
 
-[Tutorials](http://www.vmtk.org/Tutorials)/BranchSplitting
-
 Branch splitting
 ================
 
 This tutorial demonstrates how to split a vascular segment into its constituent branches.
 
-Before proceeding, make sure you went through the [centerlines tutorial](http://www.vmtk.org/Tutorials/Centerlines).
+Before proceeding, make sure you went through the [centerlines tutorial](/Tutorials/Centerlines).
 
 The theory behind this tutorial can be found in the following publication:
 
@@ -107,7 +105,7 @@ The best way to learn this is to play with it and see what happens.
 
 One recommendation: when clipping the surface of a vascular network, it is strongly advised that all branches have a centerline in their interior (for weird geometries, e.g. when you're dealing with an aneurysm, you can always generate a centerline that enters the aneurysm). If this is not satisfied, spourious cuts may appear in the branches that do not contain a centerline.
 
-One last observation: `vmtkbranchextractor` is not the only script dealing with splitting and grouping sets of centerlines. Also `vmtkendpointextractor`, described in the [Prepare a surface for mesh generation](http://www.vmtk.org/Tutorials/SurfaceForMeshing) tutorial, works the same way. Try running the script and visualize the results with `vmtkcenterlineviewer` to understand what it's all about. 
+One last observation: `vmtkbranchextractor` is not the only script dealing with splitting and grouping sets of centerlines. Also `vmtkendpointextractor`, described in the [Prepare a surface for mesh generation](/Tutorials/SurfaceForMeshing) tutorial, works the same way. Try running the script and visualize the results with `vmtkcenterlineviewer` to understand what it's all about. 
 
 
 

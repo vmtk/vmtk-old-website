@@ -18,7 +18,7 @@ These are a bunch of tutorials on the use of vmtk. The first group is about the 
 ## Functionality
 
 - [Getting Started](/Tutorials/GettingStarted/) - learn how to get your original dataset to work into vmtk and set it up for further processing
-- [Level Set Segmentation](/Tutorials/ImageBasedModelling/) - learn how to reconstruct the 3D surface of a vascular segment from CT or MR images using level sets
+- [Level Set Segmentation](/Tutorials/ImageBasedModeling/) - learn how to reconstruct the 3D surface of a vascular segment from CT or MR images using level sets
 - [Computing Centerlines](/Tutorials/Centerlines/) - learn how to compute centerlines of a vascular segment
 - [Preparing a Surface for Meshing](/Tutorials/SurfaceForMeshing/) - learn how to prepare a surface for mesh generation
 - [Generating a Mesh](/Tutorials/MeshGeneration/) - learn how to generate a mesh from a surface

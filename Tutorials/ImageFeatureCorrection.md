@@ -2,18 +2,16 @@
 layout: default
 ---
 
-[Tutorials](http://www.vmtk.org/Tutorials) / ImageFeatureCorrection
-
 Protocol on making a CFD mesh using a sigmoid mask
 ==========
 
 In this protocol is explained how you can mask the bone with a sigmoid function to create a good mesh from for example the internal carotid artery or an aneurysm located near bone. The sigmoid function masks the high gradients in bone and air in order to decrease their influence on the levelset. If you can't understand the used code, I advise you to look at one of the other tutorials on the vmtk website.
 
-[vmtk scripts](http://www.vmtk.org/Tutorials/ScriptsBasic)<br>
-[Basic PypeS tutorial](http://www.vmtk.org/Tutorials/PypesBasic)<br>
-[Image-based Modeling](http://www.vmtk.org/Tutorials/ImageBasedModeling)<br>
-[Computing centerlines](http://www.vmtk.org/Tutorials/Centerlines)<br>
-[From 3D surfaces to CFD meshes](http://www.vmtk.org/Tutorials/SurfaceForMeshing)
+[vmtk scripts](/Tutorials/ScriptsBasic)<br>
+[Basic PypeS tutorial](/Tutorials/PypesBasic)<br>
+[Image-based Modeling](/Tutorials/ImageBasedModeling)<br>
+[Computing centerlines](/Tutorials/Centerlines)<br>
+[From 3D surfaces to CFD meshes](/Tutorials/SurfaceForMeshing)
  ---
 
 ##Read and Display the image
@@ -113,7 +111,7 @@ I recommend however to use a small standard deviation (for example one pixel) be
 
 ### Short explanation of the problem.
 
-When looking at figure 6, the intensities of the different tissues are displayed by the blue line. The red dotted line represents the negative absolute derivative (for a more detailed explanation i refer to the [PhD thesis of Luca Antiga](http://www.orobix.com/luca/AntigaPhDThesis.pdf)). Normally when the bone is away from the aneurysm, a deformable model that would start at point A would evolve to point B. However, when bone is close, it will evolve to point C because this is the local minimum and not point B. A deformable model for bone starting at point D will always evolve to point C. If you look at the figure closely, you can see that the same can happen when air will come too close. The great difference in intensities between vessel and bone/air, cause the problem. The correction that is applied by the sigmoid function is the green line, which will cause the local minimum to shift to point B again.
+When looking at figure 6, the intensities of the different tissues are displayed by the blue line. The red dotted line represents the negative absolute derivative (for a more detailed explanation i refer to the [PhD thesis of Luca Antiga](http://lantiga.github.com/media/AntigaPhDThesis.pdf)). Normally when the bone is away from the aneurysm, a deformable model that would start at point A would evolve to point B. However, when bone is close, it will evolve to point C because this is the local minimum and not point B. A deformable model for bone starting at point D will always evolve to point C. If you look at the figure closely, you can see that the same can happen when air will come too close. The great difference in intensities between vessel and bone/air, cause the problem. The correction that is applied by the sigmoid function is the green line, which will cause the local minimum to shift to point B again.
 
 ---
 
@@ -198,7 +196,7 @@ In the rare occasion that in some regions on the surface strange peaks will appe
      --pipe vmtksurfaceremeshing -elementsizemode areaarray -targetareaarray DistanceToCenterlines 
      -targetareafactor 0.1 -maxarea 0.1 -ofile aneurysm_model_rmsh.vtp
 
-Clip the surface with `vmtksurfaceclipper` (There are also other options to clip the surface, see [From 3D surfaces to CFD meshes](http://www.vmtk.org/Tutorials/SurfaceToMesh?action=edit)^[?](http://www.vmtk.org/Tutorials/SurfaceToMesh?action=edit) )
+Clip the surface with `vmtksurfaceclipper` (There are also other options to clip the surface, see [From 3D surfaces to CFD meshes](/Tutorials/SurfaceToMesh/) ).
 
      vmtksurfaceclipper -ifile aneurysm_model_sm.vtp -ofile aneurysm_model_sm_cl.vtp
 
@@ -240,7 +238,7 @@ This step scales the mesh from mm to cm
 
      vmtkmeshscaling -ifile aneurysm_model_meshq.vtu -scale 0.1 -ofile aneurysm_model_meshq_sc.vtu
 
-Finally the mesh is written to libmesh format. This is also dependant on the solver you are using. Here I used a solver that is currently in development. [Generating an inputfile for a CFD solver](http://www.vmtk.org/Tutorials/SurfaceToMesh?action=edit)[?](http://www.vmtk.org/Tutorials/SurfaceToMesh?action=edit)
+Finally the mesh is written to libmesh format. This is also dependant on the solver you are using. Here I used a solver that is currently in development. [Generating an inputfile for a CFD solver](/Tutorials/SurfaceToMesh).
 
      vmtkmeshwriter -ifile aneurysm_model_meshq_sc.vtu -entityidsarray CellEntityIds -ofile aneurysm_model_meshq_sc.xda
 
@@ -255,27 +253,26 @@ The first thing to do is to cap the flowextensions so you have a model with clos
 
 The option -interactive is set to 0, so vmtksurfacecapper will automatically cap all open extensions. If you want to do manually, set the option to 1.
 
-NetGen is an open source mesh generation tool. [Download NetGen](http://www.hpfem.jku.at/netgen/download.html) or instal from the ubuntu repository. For a more detailed explanation see [Meshing with NetGen](http://www.vmtk.org/Tutorials/SurfaceToMesh?action=edit)[?](http://www.vmtk.org/Tutorials/SurfaceToMesh?action=edit)
+NetGen is an open source mesh generation tool. [Download NetGen](http://www.hpfem.jku.at/netgen/download.html) or instal from the ubuntu repository. For a more detailed explanation see [Meshing with NetGen](/Tutorials/SurfaceToMesh).
 
 Remove spurious edges with STL doctor
 
-`Mesh Options --> mesh granularity` on very fine and second order element. Then set STL – chart distance to for example 4.0 to make the mesh coarser. `Mesh --> Edit boundary conditions`: assign the correct boundary properties to the inlet, outlets and wall Change the bc properties in the following way.
+`Mesh Options --> mesh granularity` on very fine and second order element. Then set STL - chart distance to for example 4.0 to make the mesh coarser. `Mesh --> Edit boundary conditions`: assign the correct boundary properties to the inlet, outlets and wall Change the bc properties in the following way.
 
+<pre>
 1 --> 2
 2 --> 3
 3 --> 4
 4 --> 5
 `export mesh --> filename.neu`
+</pre>
 
 With meshscaling you have to convert the model from millimeters to centimeters.
 
      vmtkmeshscaling -ifile filename.neu -scale 0.1 -ofile filename.vtu
 
-After this step you are ready to generate the input for your solver. This greatly depends on the solver you are using. [Generating an inputfile for a CFD solver](http://www.vmtk.org/Tutorials/SurfaceToMesh?action=edit)[?](http://www.vmtk.org/Tutorials/SurfaceToMesh?action=edit)
+After this step you are ready to generate the input for your solver. This greatly depends on the solver you are using. [Generating an inputfile for a CFD solver](/Tutorials/SurfaceToMesh).
 
 If you have any questions, feel free to contact me at R.P.M.Jansen@student.tue.nl 
-
-
-
 
 

@@ -2,8 +2,6 @@
 layout: default
 ---
 
-[Tutorials](http://www.vmtk.org/Tutorials)/Centerlines
-
 Computing centerlines
 =====================
 
@@ -13,7 +11,7 @@ This tutorial demonstrates how to compute centerlines from a surface model of a 
 
 Centerlines are powerful descriptors of the shape of vessels. Although the concept of what a centerline is is more or less intuitive, their mathematical definition is not unique. A lot of methods have been proposed in the literature for the computation of centerlines both from angiographic images and 3D models. The algorithm implemented in vmtk deals with the computation of centerlines starting from surface models, and has the advantage that it is well characterized mathematically and quite stable to perturbations on the surface.
 
-For further details please refer to publications and Luca's PhD thesis [here](www.orobix.com/luca/AntigaPhDThesis.pdf). 
+For further details please refer to publications and Luca's PhD thesis [here](http://lantiga.github.com/media/AntigaPhDThesis.pdf). 
 
 Briefly, centerlines are determined as weighted shortest paths traced between two extremal points. In order to ensure that the final lines are in fact central, the paths cannot lie anywhere in space, but are bound to run on the Voronoi diagram of the vessel model. There's a huge literature on Voronoi diagrams, however, as a first approximation, you can consider it as the place where the centers of maximal inscribed spheres are defined. A sphere inscribed in an object is said to be maximal when there's no other inscribed sphere that contains it. So, for every point belonging to the Voronoi diagram, there's a sphere centered in that point that is a maximal inscribed sphere (the information relative to the radius is therefore defined everywhere on the Voronoi diagram).
 

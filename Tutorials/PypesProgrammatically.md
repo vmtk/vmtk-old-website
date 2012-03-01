@@ -2,16 +2,14 @@
 layout: default
 ---
 
-[Tutorials](http://www.vmtk.org/Tutorials) / PypesProgrammatically
-
 Using PypeS programmatically
 ==========
 
 <sub>by Carlos Remuzzi, BEng Biomedical Engineering, Freelance Developer, London UK</sub>
 
-The first and most immediate use of the Vmtk framework consists in entering your piped scripts on a command line. The [vmtk scripts](http://www.vmtk.org/Tutorials/ScriptsBasic) tutorial and the [basic PypeS tutorial](http://www.vmtk.org/Tutorials/PypesBasic) offer an extensive insight on this matter.
+The first and most immediate use of the Vmtk framework consists in entering your piped scripts on a command line. The [vmtk scripts](/Tutorials/ScriptsBasic) tutorial and the [basic PypeS tutorial](/Tutorials/PypesBasic) offer an extensive insight on this matter.
 
-A more radical approach involves the creation of new Python scripts and modules based on the Vmtk libraries. The [advanced PypeS tutorial](http://www.vmtk.org/Tutorials/PypesAdvanced) gives you the basic knowledge to start developing with vmtk.
+A more radical approach involves the creation of new Python scripts and modules based on the Vmtk libraries. The [advanced PypeS tutorial](/Tutorials/PypesAdvanced) gives you the basic knowledge to start developing with vmtk.
 
 There is at least one more way of working with Vmtk, that is from the Python interactive shell. Advantages of this method are that you get the responsiveness of a command line and at the same time you are able to handle vmtk objects rather than just argument strings.
 
@@ -99,5 +97,5 @@ You can save it as **`myscript.py`** and you will be able to run it either from 
     $ chmod u+x myscript.py
     $ ./myscript.py
 
-Further details about writing scripts based on Vmtk and Pypes are discussed in the [advanced PypeS tutorial](http://www.vmtk.org/Tutorials/PypesAdvanced) . 
+Further details about writing scripts based on Vmtk and Pypes are discussed in the [advanced PypeS tutorial](/Tutorials/PypesAdvanced) . 
 

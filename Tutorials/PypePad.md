@@ -2,8 +2,6 @@
 layout: default
 ---
 
-[Tutorials](http://www.vmtk.org/Tutorials) / Pypepad
-
 Using Pypepad
 ==========
 <sub>by Carlos Remuzzi BEng, Biomedical Engineering, Freelance Developer, London UK</sub>

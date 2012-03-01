@@ -2,8 +2,6 @@
 layout: default
 ---
 
-[Tutorials](http://www.vmtk.org/Tutorials) / PypesBasic
-
 Basic PypeS tutorial
 ==========
 
@@ -24,7 +22,7 @@ Each PypeScript is at the same time:
 Bearing this in mind, we can proceed with something more practical.
 
 Let's type `vmtkmarchingcubes --help` (note for binary package users: you can type the same in PypePad, or you can do it from the command line by prepending the command with vmtk, i.e.). `vmtk vmtkmarchingcubes --help`. The following text will be displayed:
-
+<pre>
 Creating vmtkMarchingCubes instance.
 Automatic piping vmtkmarchingcubes
 Parsing options vmtkmarchingcubes
@@ -50,16 +48,16 @@ Input arguments:
   -id Id (int,1); default= 0: script id
   -handle Self (self,1): handle to self
   -o Surface (vtkPolyData,1): the output surface
-
+</pre>
 The first three lines are a log of what's happening behind the scenes: a PypeS instance is created, which in turns creates a vmtkMarchingCubes instance and takes care of passing the right arguments to it. Below is the help for vmtkmarchingcubes, starting with the script name, a short description, a list of input arguments and a list of output arguments. These are in turn reported as the command line option, the corresponding instance variable name, its required type, the default value and a description.
 
 As an example on how single scripts can be piped together, let's now consider the following scripts:
 
-    vmtkimagereader, which reads an image (the format is guessed from the filename extension) and does nothing else (except spitting out a vtkImageData object)
-    vmtkmarchingcubes, which takes an image in input (a vtkImageData object) and generates a surface (a vtkPolyData object) using the Marching Cubes algorithm (default isosurface level is 0)
-    vmtksurfacesmoothing, which takes a surface in input (a vtkPolyData object) and generates a smoothed version of it (again a vtkPolyData object) using the Taubin algorithm
-    vmtksurfaceviewer, which takes in input a surface (a vtkPolyData object) and displays it within a rendering window
-    vmtksurfacewriter, which writes a surface to a file (again, the format is guessed from the filename extension) 
+* vmtkimagereader, which reads an image (the format is guessed from the filename extension) and does nothing else (except spitting out a vtkImageData object)
+* vmtkmarchingcubes, which takes an image in input (a vtkImageData object) and generates a surface (a vtkPolyData object) using the Marching Cubes algorithm (default isosurface level is 0)
+* vmtksurfacesmoothing, which takes a surface in input (a vtkPolyData object) and generates a smoothed version of it (again a vtkPolyData object) using the Taubin algorithm
+* vmtksurfaceviewer, which takes in input a surface (a vtkPolyData object) and displays it within a rendering window
+* vmtksurfacewriter, which writes a surface to a file (again, the format is guessed from the filename extension) 
 
 We can use vmtkmarchingcubes as a stand-alone script by using the built-in I/O functionality
 
