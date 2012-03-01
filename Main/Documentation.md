@@ -20,5 +20,5 @@ Automatically generated Python and C++ class references
 
 ## Presentations
 
-[vmtkSBC2008.pdf](/media/Main/vmtkSBC2008.pdf): vmtk workshop at the 2008 ASME Summer Bioengineering Conference.
+- [vmtkSBC2008.pdf](/media/Main/vmtkSBC2008.pdf): vmtk workshop at the 2008 ASME Summer Bioengineering Conference.
 
