@@ -15,7 +15,7 @@ Tutorials will guide you through the main features
 
 Automatically generated Python and C++ class references
 
-- [vmtk scripts reference](/vmtkScripts/vmtkscripts)
+- [vmtk scripts reference](/VmtkScripts/vmtkscripts)
 - [vmtk C++ class reference](/doxygen/)
 
 ## Presentations
