@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classvtkvmtkEmptyStencil.html" title=".." alt="" coords="724,31,868,59"/>
+<area shape="rect" id="node11" href="$classvtkvmtkPolyDataManifoldStencil.html" title=".." alt="" coords="690,83,902,111"/>
+<area shape="rect" id="node2" href="$classvtkvmtkNeighborhood.html" title=".." alt="" coords="337,58,487,86"/>
+<area shape="rect" id="node4" href="$classvtkvmtkDataSetItem.html" title=".." alt="" coords="147,58,288,86"/>
+<area shape="rect" id="node6" href="$classvtkvmtkItem.html" title=".." alt="" coords="6,58,98,86"/>
+<area shape="rect" id="node13" href="$classvtkvmtkPolyDataAreaWeightedUmbrellaStencil.html" title=".." alt="" coords="950,5,1248,33"/>
+<area shape="rect" id="node15" href="$classvtkvmtkPolyDataGradientStencil.html" title=".." alt="" coords="993,57,1205,85"/>
+<area shape="rect" id="node17" href="$classvtkvmtkPolyDataLaplaceBeltramiStencil.html" title=".." alt="" coords="971,109,1227,137"/>
+<area shape="rect" id="node23" href="$classvtkvmtkPolyDataUmbrellaStencil.html" title=".." alt="" coords="992,161,1206,189"/>
+<area shape="rect" id="node19" href="$classvtkvmtkPolyDataFELaplaceBeltramiStencil.html" title=".." alt="" coords="1305,83,1578,111"/>
+<area shape="rect" id="node21" href="$classvtkvmtkPolyDataFVFELaplaceBeltramiStencil.html" title=".." alt="" coords="1296,135,1586,163"/>
+</map>
