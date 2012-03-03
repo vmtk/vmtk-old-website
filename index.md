@@ -12,6 +12,20 @@ The Vascular Modeling Toolkit is a collection of libraries and tools for 3D reco
 
 ## News
 
+### Mar 3, 2012: Announcement: vmtk at the CFD in Medicine and Biology Conference, Dead Sea. 
+
+For anyone attending the Computational Fluid Dynamics in Medicine and Biology Conference (in conjunction with the 7th International Biofluid Mechanics Symposium), March 25 - 30, 2012, Crowne Plaza Dead Sea, Ein Bokek, Dead Sea, Israel. I (Luca) will be giving a talk on Monday and I'll be available at the [Orobix](http://www.orobix.com) desk (we are among the conference sponsors).
+
+Please come up and bring your own data. I'll be giving a couple of free mini-tutorials during the social hours on Monday and Thursday evening. 
+
+If you're interested in making arrangements upfront, email me at *luca dot antiga at orobix dot com*.
+
+### Mar 3, 2012: Website transition complete
+
+Thanks to the work of Sara Zanchi and Valentina Rossi, who just joined us at Orobix for their internship and helped us porting the tutorials, the transition to the Github-hosted website has been completed. Take a look at the [website repository](https://github.com/vmtk/vmtk.github.com) to see how it's done. Thanks to [Jekyll](https://github.com/mojombo/jekyll), we could reproduce the same urls.
+
+By the way, last night I also switched off the Sourceforge svn and git repositories. From now on, [https://github.com/vmtk/vmtk](https://github.com/vmtk/vmtk) takes over.
+
 ### Feb 29, 2012: Website migrated to Github
 
 The vmtk website is being migrated to [Github](https://github.com/vmtk/vmtk.github.com) and released under a Creative Commons license. It is a git repostory itself, so feel free to fork it, add a tutorial or two and send us a pull request.
