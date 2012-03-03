@@ -14,7 +14,7 @@ The Vascular Modeling Toolkit is a collection of libraries and tools for 3D reco
 
 ### Mar 3, 2012: Announcement: vmtk at the CFD in Medicine and Biology Conference, Dead Sea. 
 
-For anyone attending the Computational Fluid Dynamics in Medicine and Biology Conference (in conjunction with the 7th International Biofluid Mechanics Symposium), March 25 - 30, 2012, Crowne Plaza Dead Sea, Ein Bokek, Dead Sea, Israel. I (Luca) will be giving a talk on Monday and I'll be available at the [Orobix](http://www.orobix.com) desk (we are among the conference sponsors).
+For anyone attending the Computational Fluid Dynamics in Medicine and Biology Conference (in conjunction with the 7th International Biofluid Mechanics Symposium), March 25 - 30, 2012, Crowne Plaza Dead Sea, Ein Bokek, Dead Sea, Israel. I (Luca) will be giving a talk on Monday and I'll be available at the [Orobix](http://www.orobix.com) desk (we are among the [conference sponsors](http://www.engconfintl.org/12adsponsors.html)).
 
 Please come up and bring your own data. I'll be giving a couple of free mini-tutorials during the social hours on Monday and Thursday evening. 
 
