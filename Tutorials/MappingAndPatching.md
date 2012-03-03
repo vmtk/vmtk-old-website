@@ -46,13 +46,15 @@ We extract the centerlines from the model, compute their attributes, i.e. the cu
 
 We compute the bifurcation reference systems along the centerline network just computed
 
-    vmtkbifurcationreferencesystems -ifile aorta_cl.vtp -radiusarray MaximumInscribedSphereRadius -blankingarray Blanking -groupidsarray GroupIds -ofile aorta_cl_rs.vtp
+    vmtkbifurcationreferencesystems -ifile aorta_cl.vtp -radiusarray MaximumInscribedSphereRadius -blankingarray Blanking \
+    -groupidsarray GroupIds -ofile aorta_cl_rs.vtp
 
 ###Surface splitting
 
 We subdivide the surface in its constituent branches: in this way the mapping and patching will be performed on each singular branch (Figure 2-right).
 
-    vmtkbranchclipper -ifile aorta.vtp -centerlinesfile aorta_cl.vtp -groupidsarray GroupIds -radiusarray MaximumInscribedSphereRadius -blankingarray Blanking -ofile aorta_clipped.vtp 
+    vmtkbranchclipper -ifile aorta.vtp -centerlinesfile aorta_cl.vtp -groupidsarray GroupIds -radiusarray MaximumInscribedSphereRadius \ 
+    -blankingarray Blanking -ofile aorta_clipped.vtp 
 
 ![Figure 2](/media/Tutorials/MapPatchFigure2.png)
 <br>Figure 2. Split centerlines (left) and surface (right): GroupIds array shown.
@@ -61,7 +63,9 @@ We subdivide the surface in its constituent branches: in this way the mapping an
 
 By means of the `vmtkbranchmetrics` script two additional arrays are created on each branch of the split surface whose default names are AbscissaMetric and AngularMetric: the first is computed from the curvilinear abscissa defined on the centerlines, while the second represents the periodic circumferential coordinate of mesh points around the centerlines and spans the interval [-&pi;, +&pi;]. In Figure 3 iso-contours over the two arrays are also shown.
 
-    vmtkbranchmetrics -ifile aorta_clipped.vtp -centerlinesfile aorta_cl.vtp -abscissasarray Abscissas -normalsarray ParallelTransportNormals -groupidsarray GroupIds -centerlineidsarray CenterlineIds -tractidsarray TractIds -blankingarray Blanking -radiusarray MaximumInscribedSphereRadius -ofile aorta_clipped_metrics.vtp
+    vmtkbranchmetrics -ifile aorta_clipped.vtp -centerlinesfile aorta_cl.vtp -abscissasarray Abscissas -normalsarray ParallelTransportNormals \
+    -groupidsarray GroupIds -centerlineidsarray CenterlineIds -tractidsarray TractIds -blankingarray Blanking -radiusarray MaximumInscribedSphereRadius \
+    -ofile aorta_clipped_metrics.vtp
 
 ![Figure 3](/media/Tutorials/MapPatchFigure3.png)
 <br>Figure 3. Longitudinal (left) and circumferential metrics created over the surface model by vmtkbranchmetrics script; iso-contours over the two fields are shown.
@@ -91,7 +95,8 @@ Try the help command the see the information needed
 
 By means of the options `-longitudinalpatchsize` and `-circularpatches` we impose the dimensions of the patches, in terms of "height" (in mm) of the patch along the longitudinal direction and number of angular cut over the interval [-&pi;, +&pi;] respectively; the result of this discretization can be seen visualizing the Slab and Sector arrays created by the script or the mesh new surface discretization (Figure 5). You'll probably have to play with these values to find out the discretization that best fits your needs; we here cut every 0.5 mm and subdivide the interval [-&pi;, +&pi;] in 12 sectors.
 
-    vmtkbranchpatching -ifile aorta_clipped_mapping.vtp -groupidsarray GroupIds -longitudinalmappingarray StretchedMapping -circularmappingarray AngularMetric -longitudinalpatchsize 0.5 -circularpatches 12 -ofile aorta_clipped_patching.vtp
+    vmtkbranchpatching -ifile aorta_clipped_mapping.vtp -groupidsarray GroupIds -longitudinalmappingarray StretchedMapping \
+    -circularmappingarray AngularMetric -longitudinalpatchsize 0.5 -circularpatches 12 -ofile aorta_clipped_patching.vtp
 
 ![Figure 5](/media/Tutorials/MapPatchFigure5.png)
 <br>Figure 5. New mesh tesselation created by `vmtkbranchpatching` by cutting the surface longitudinally and circumferentially.
@@ -111,7 +116,10 @@ By adding the following option to the previous patching command the patched data
 
 One possible way to extract the patched 3D surface and the flattened image for only one of the vascular branches is to use `vmtkbranchclipper` to clip the segment of interest before performing the patching. For example to extract the branch with group id 5
 
-    vmtkbranchclipper -ifile aorta_clipped_mapping.vtp -groupids 5 -groupidsarray GroupIds -blankingarray Blanking -centerlinesfile aorta_cl.vtp -radiusarray MaximumInscribedSphereRadius --pipe vmtkbranchpatching -circularpatches 12 -longitudinalpatchsize 0.5 -longitudinalmappingarray StretchedMapping -circularmappingarray AngularMetric -ofile aorta_clipped patching_id5.vtp -patcheddatafile aorta_clipped_patching_id5.vti
+    vmtkbranchclipper -ifile aorta_clipped_mapping.vtp -groupids 5 -groupidsarray GroupIds -blankingarray Blanking \
+    -centerlinesfile aorta_cl.vtp -radiusarray MaximumInscribedSphereRadius --pipe vmtkbranchpatching -circularpatches 12 \
+    -longitudinalpatchsize 0.5 -longitudinalmappingarray StretchedMapping -circularmappingarray AngularMetric \
+    -ofile aorta_clipped patching_id5.vtp -patcheddatafile aorta_clipped_patching_id5.vti
 
 Figure 8 shows the results.
 
