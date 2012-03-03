@@ -2,8 +2,6 @@
 layout: default
 ---
 
-[Tutorials](http://www.vmtk.org/Tutorials) / MappingAndPatching
-
 Mapping and patching
 ==========
 
@@ -23,7 +21,7 @@ Briefly, each segment of a vascular network is topologically equivalent to a cyl
 
 ##Pre-requisites
 
-In addition to ad hoc vmtk scripts for metric calculation (`vmtkbranchmetrics`), mapping (`vmtkbranchmapping`) and patching (`vmtkbranchpatching`), this tutorial relies on concepts and operations presented in previous sections, such as [centerlines extraction](http://www.vmtk.org/Tutorials/Centerlines), their [geometric analysis](http://www.vmtk.org/Tutorials/GeometricAnalysis), [bifurcations identification](http://www.vmtk.org/Tutorials/GeometricAnalysis) and [branch splitting](http://www.vmtk.org/Tutorials/BranchSplitting).
+In addition to ad hoc vmtk scripts for metric calculation (`vmtkbranchmetrics`), mapping (`vmtkbranchmapping`) and patching (`vmtkbranchpatching`), this tutorial relies on concepts and operations presented in previous sections, such as [centerlines extraction](/Tutorials/Centerlines), their [geometric analysis](/Tutorials/GeometricAnalysis), [bifurcations identification](/Tutorials/GeometricAnalysis) and [branch splitting](/Tutorials/BranchSplitting).
 
 ##An example: WSS and OSI along a branching vascular district
 

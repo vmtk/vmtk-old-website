@@ -7,7 +7,7 @@ Geometric analysis
 
 This tutorial demonstrates how to analyze the 3D geometry of a vascular segment.
 
-Before proceeding, make sure you went through the [centerlines tutorial](www.vmtk.org/Tutorials/Centerlines/) and the [branch splitting tutorial](http://www.vmtk.org/Tutorials/BranchSplitting/). 
+Before proceeding, make sure you went through the [centerlines tutorial](/Tutorials/Centerlines/) and the [branch splitting tutorial](/Tutorials/BranchSplitting/). 
 
 The theory behind this tutorial can be found in
 
@@ -21,7 +21,7 @@ You can see it in action in
 
 ## Overview
 
-Let's assume we have a surface representing a branching vascular segment, with multiple branches each with N vessels departing from the parent vessel. As in the [branch splitting tutorial](http://www.vmtk.org/Tutorials/BranchSplitting/), let's assume the network has a tree-like topology.
+Let's assume we have a surface representing a branching vascular segment, with multiple branches each with N vessels departing from the parent vessel. As in the [branch splitting tutorial](/Tutorials/BranchSplitting/), let's assume the network has a tree-like topology.
 
 Using vmtk, you should have been able to compute centerlines, to identify bifurcations and branches on the centerlines and to clip the surface according to the branches. Now we'll face the problem of quantifying geometric features of the vascular segment, those associated to bifurcations, such as bifurcation planes and bifurcation angles, and those associated to branches, such as curvature and torsion.
 
