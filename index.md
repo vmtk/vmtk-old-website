@@ -12,6 +12,12 @@ The Vascular Modeling Toolkit is a collection of libraries and tools for 3D reco
 
 ## News
 
+### Mar 12, 2012: New code and tutorial on digital removal of cerebral aneurysms in vmtkApps. 
+
+A new directory has been added to vmtk, called vmtkApps. It will contain application-specific code built on top of vmtk.
+
+As a first entry, Marina Piccinelli (Emory Univ) has contributed an implementation of Matthew Ford's algorithm for digital removal of cerebral aneurysms (Ford et al, BJR 2009). Check it out with the [tutorial](/Tutorials/ParentVesselReconstruction/). The code is at the [vmtk repository](https://github.com/vmtk/vmtk).
+
 ### Mar 3, 2012: Announcement: vmtk at the CFD in Medicine and Biology Conference, Dead Sea. 
 
 For anyone attending the Computational Fluid Dynamics in Medicine and Biology Conference (in conjunction with the 7th International Biofluid Mechanics Symposium), March 25 - 30, 2012, Crowne Plaza Dead Sea, Ein Bokek, Dead Sea, Israel. I (Luca) will be giving a talk on Monday and I'll be available at the [Orobix](http://www.orobix.com) desk (we are among the [conference sponsors](http://www.engconfintl.org/12adsponsors.html)).

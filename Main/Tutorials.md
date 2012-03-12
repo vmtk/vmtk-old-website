@@ -27,6 +27,12 @@ These are a bunch of tutorials on the use of vmtk. The first group is about the 
 - [Geometric analysis](/Tutorials/GeometricAnalysis/) - learn how to analyze the 3D geometry of a vascular segment
 - [Mapping and patching](/Tutorials/MappingAndPatching/) - learn how to map the surface of a population of vessels onto the same parametric space and enable statistical analyses of surface-based quantities
 
+## Applications
+
+### Cerebral aneurysms
+
+- [Parent Vessel Reconstruction](/Tutorials/ParentVesselReconstruction/) - learn how to perform digital aneurysm removal and reconstruct the parent vessel using Matthew Ford's method (Ford et al, BJR 2009). *Contributed by Marina Piccinelli, Math&CS Department, Emory University, Atlanta, US*
+
 ## Contributed tutorials
 
 - [Image feature correction](/Tutorials/ImageFeatureCorrection/) - learn how to correct the feature image in order to have a good surface model near bone and pockets of air. *Contributed by Rob Jansen, Dept. of Biomedical Engineering, Eindhoven University of Technology*
