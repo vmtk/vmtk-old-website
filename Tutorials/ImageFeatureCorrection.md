@@ -16,7 +16,7 @@ In this protocol is explained how you can mask the bone with a sigmoid function 
 
 ##Read and Display the image
 
-The first step is to read in the dicom files and to display them on the screen. This is done using `vmtkimagereader`, and `vmtkimageviewer vmtkimagereader -f dicom -d dicom_directory_path -ofile image_volume.vti –pipe vmtkimageviewer`
+The first step is to read in the dicom files and to display them on the screen. This is done using `vmtkimagereader`, and `vmtkimageviewer vmtkimagereader -f dicom -d dicom_directory_path -ofile image_volume.vti --pipe vmtkimageviewer`
 
 The next step is to select a volume of interest. If you look at the object using `vmtkimageviewer` you will see that the aneurysm is located on the Right Middle Cerebral Artery. Because I also wanted to test some code to reduce the influence of bone and air on the segmentation, I will also include the right Internal Carotid Artery in the volume of interest. When you are only interested in the aneurysm, it is best to create a volume of interest that only includes the aneurysm because of computational time needed for bigger volumes.
 
@@ -37,7 +37,7 @@ To create the proper mask on the image it is necessary to locate regions of bone
 
 An isosurface of bone and air have to be made seperately. The values from bone and vessels can overlap, but still it is pretty important to choose an isosurface with a value that is as low as possible. (I did this in steps of `100`) For this image I chose level `500 HU` (Hounsfield Units) for the isosurface. Before you make the actual isosurface with `vmtklevelsetsegmentation`, you could make a surface with `vmtkmarchingcubes` in the following way:
 
-     vmtkmarchingcubes -ifile image_volume_voi.vti -l 500.0 –-pipe vmtksurfaceviewer
+     vmtkmarchingcubes -ifile image_volume_voi.vti -l 500.0 --pipe vmtksurfaceviewer
 
 This will give you an idea of what will be included in the isosurface. If you can recognize vascular structures, then you will have to increase the value of the isosurface in order to exclude the vascular structures from the levelset
 
@@ -141,7 +141,7 @@ When the thresholds fail to make an initialization, the thresholds are adjusted 
 
 If you want to remove a region afterwards because you are not satisfied with it, you can use `vmtkimagevoipainter`
 
-     vmtkrenderer -pipe vmtkmarchingcubes -ifile aneurysm_model.vti -l 0.0 -pipe vmtksurfaceviewer -i @.o 
+     vmtkrenderer -pipe vmtkmarchingcubes -ifile aneurysm_model.vti -l 0.0 --pipe vmtksurfaceviewer -i @.o 
      -pipe vmtkimagevoipainter -ifile aneurysm_model.vti -paintvalue 10 -ofile aneurysm_model2.vti
 
 The paintvalue has to be greater then the maximum value in the levelset. You could look this up by using `vmtkimageviewer` on the segmentation file. A value of 10 should be enough. `vmtkimagevoipainter` works in a similar fashion as `vmtkimagevoiselector`. Once you apply the painting, the image will get darker because there is a shift in the color scale due to the new value you have entered.
@@ -192,7 +192,7 @@ Then the surface will be smoothed
 
 In the rare occasion that in some regions on the surface strange peaks will appear, you can also use `vmtksurfaceremeshing`.
 
-     vmtksurfacereader -ifile aneurysm_model.vtp --pipe vmtkcenterlines –pipe vmtkdistancetocenterlines 
+     vmtksurfacereader -ifile aneurysm_model.vtp --pipe vmtkcenterlines --pipe vmtkdistancetocenterlines 
      --pipe vmtksurfaceremeshing -elementsizemode areaarray -targetareaarray DistanceToCenterlines 
      -targetareafactor 0.1 -maxarea 0.1 -ofile aneurysm_model_rmsh.vtp
 
@@ -207,7 +207,7 @@ The next step is increasing the number of surface triangles. This is optional bu
 Then flowextensions will be added to the model.
 
      vmtksurfacereader -ifile aneurysm_model_sm_cl_sb.vtp --pipe vmtkcenterlines -seedselector openprofiles 
-     -endpoints 1 –-pipe vmtkflowextensions -adaptivelength@ 1-extensionratio 5 -normalestimationratio@ 1 
+     -endpoints 1 --pipe vmtkflowextensions -adaptivelength@ 1-extensionratio 5 -normalestimationratio@ 1 
      --pipe vmtkflowextensions -extentionratio 8 --pipe vmtksurfacewriter -ofile aneurysm_model_sm_cl_sb_ex.vtp
 
 The extensionratio 5 is used for the inlet, the extensionratio 8 is used for the left outlet, the extensionratio 16 is used for the right. This ratio determines the length of the extension. Because the inlet I created with clipping is usually pretty long, this ratio is smaller.

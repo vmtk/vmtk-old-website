@@ -46,3 +46,63 @@ After several years with Sourceforge, the official git repository for vmtk has b
 
 The instructions for compiling from source have been updated. Thanks to recent developments in CMake, the compilation phase for vmtk will also download and compile VTK and ITK for you, all with the right CMake options. To get this feature, make sure you download the development version from the git repository.
 
+---
+
+<table cellspacing="10" cellpadding="0" class="cell-centered">
+<tr>
+<td class="rounded-table bordered" valign="top">
+<table class="support-table" width="205">
+<tr><td>&nbsp;</td></tr>
+<tr><td>Mailing list</td></tr>
+<tr><td>Issue Tracker</td></tr>
+<tr><td>Direct email support</td></tr>
+<tr><td>Coverage hours</td></tr>
+<tr><td>Response time</td></tr>
+<tr><td>Incidents/Year</td></tr>
+<tr><td>Emergency patches</td></tr>
+<tr><td>Price per server</td></tr>
+</table>
+</td> 
+<td class="first_bg rounded-table small" valign="top">
+<table class="support-table" width="105">
+<tr><td class="verybig">Free</td></tr>
+<tr><td><img src="/media/Main/ok.png"></td></tr>
+<tr><td><img src="/media/Main/ok.png"></td></tr>
+<tr><td><img src="/media/Main/ko.png"></td></tr>
+<tr><td><img src="/media/Main/ko.png"></td></tr>
+<tr><td><img src="/media/Main/ko.png"></td></tr>
+<tr><td><img src="/media/Main/ko.png"></td></tr>
+<tr><td><img src="/media/Main/ko.png"></td></tr>
+<tr><td><b>-</b></td></tr>
+</table>
+</td>
+<td class="second_bg rounded-table small" valign="top">
+<table class="support-table" width="305">
+<tr><td colspan="2" class="verybig">Gold</td></tr>
+<tr><td colspan="2"><img src="/media/Main/ok.png"></td></tr>
+<tr><td colspan="2"><img src="/media/Main/ok.png"></td></tr>
+<tr><td colspan="2"><img src="/media/Main/ok.png"></td></tr>
+<tr><td width="25%" align="right"><img src="/media/Main/ok.png"></td><td><b>10am - 6pm</b> (GMT+1)<br/>Monday-Friday</td></tr>
+<tr><td width="25%" align="right"><img src="/media/Main/ok.png"></td><td>Max <b>8 hours</b><br/>on business days</td></tr>
+<tr><td width="25%" align="right"><img src="/media/Main/ok.png"></td><td><b>Maximum 20</b></td></tr>
+<tr><td colspan="2"><img src="/media/Main/ko.png"></td></tr>
+<tr><td colspan="2"><b>&euro; 599</b> + VAT<br/>Server/Year</td></tr>
+</table>
+</td>
+<td class="third_bg rounded-table small" valign="top">
+<table class="support-table" width="305">
+<tr><td colspan="2" class="verybig">Platinum</td></tr>
+<tr><td colspan="2"><img src="/media/Main/ok.png"></td></tr>
+<tr><td colspan="2"><img src="/media/Main/ok.png"></td></tr>
+<tr><td colspan="2"><img src="/media/Main/ok.png"></td></tr>
+<tr><td width="25%" align="right"><img src="/media/Main/ok.png"></td><td><b>10am - 6pm</b> (GMT+1)<br/>Monday-Friday</td></tr>
+<tr><td width="25%" align="right"><img src="/media/Main/superok.png"></td><td>Max <b>4 hours</b><br/>on business days</td></tr>
+<tr><td width="25%" align="right"><img src="/media/Main/superok.png"></td><td class="big"><b>Unlimited</b></td></tr>
+<tr><td width="25%" align="right"><img src="/media/Main/superok.png"></td><td class="big"><b>Unlimited</b></td></tr>
+<tr><td colspan="2"><b>&euro; 2,999</b> + VAT<br/>Server/Year</td></tr>
+</table>
+</td>
+ </tr> 
+</table>
+
+---

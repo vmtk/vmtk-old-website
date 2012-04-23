@@ -23,7 +23,7 @@ Once the viewer pops up, you can:
 + **Probe the image planes** (coordinates and graylevel) by left-clicking on them.
 + **Move the image planes** by middle-clicking on them.
 + **Change window-level** by right-clicking on image planes.
-+ **Quit the viewer** by pressing q or e while the render window has focus. ((Key bindings are the same as in VTK render window interactor)) 
++ **Quit the viewer** by pressing q while the render window has focus.
 
 ## Image format conversion
 
@@ -73,9 +73,9 @@ When the render window pops up, pressing i will activate the interactor. A yello
 + **Resize the cube** by left-clicking and dragging the little spheres (handles) on the faces of the cube.
 + **Normal interaction** with the image planes is still active, so you can still move them as explained before.
 
-When satisfied with the VOI, press q or e.
+When satisfied with the VOI, press q.
 
-At this point the image volume will be clipped with the region selection cube (widget) and the new volume will be displayed in the render window. You can now: 1) quit by pressing q or e in which case the result is then piped to the vmtkimagewriter instance, or 2) go on by pressing i once again and defining another VOI. If you decide that you don't want to define another VOI but have already pressed i to activate the region selection tool, press i one more time to remove the selection widget from the render window. Pressing q or e now will quit without clipping.
+At this point the image volume will be clipped with the region selection cube (widget) and the new volume will be displayed in the render window. You can now: 1) quit by pressing q in which case the result is then piped to the vmtkimagewriter instance, or 2) go on by pressing i once again and defining another VOI. If you decide that you don't want to define another VOI but have already pressed i to activate the region selection tool, press i one more time to remove the selection widget from the render window. Pressing q now will quit without clipping.
 
 ## Surface extraction using Marching Cubes
 
