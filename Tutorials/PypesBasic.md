@@ -114,4 +114,3 @@ All the scripts in the toolkit can be glued this way (no matter if they belong t
 Although the scripts in the examples pass VTK objects to each other, PypeS has no notion of what VTK is. Types are merely strings specified in the PypeScript derived classes, so if you want to reuse PypeS for different purposes you're more than welcome to do it. If you want to understand more, just take a look at a script, e.g. *vmtk/vmtkScripts/vmtkmarchingcubes.py*. It's a good chance to appreciate the fact that the amount of additional code required in each script to make everything work is minimal. If you consider that I/O, option parsing and usage printing are taken care of automatically, the code required is actually less.
 
 Now you're ready to explore vmtk scripts. 
-
