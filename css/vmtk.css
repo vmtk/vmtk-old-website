@@ -117,3 +117,52 @@ h6 { font-size:1.0em; }
   #vmtkhead, #vmtkleft, #vmtkcmds, .footnav { display:none; }
   #vmtkfoot { padding:2px; }
 }
+
+/*PRICES TABLE*/
+
+/** SHAPES **/
+.rounded-table {
+  border-bottom-left-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+  border-top-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.bordered {
+  border: 1px solid #999;
+  border-width: 1px; 1px; 1px; 1px;
+}
+
+.cell-centered {
+	text-align: center;
+	padding-bottom: 5px;
+	font-size: 120%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cell-centered td{
+	height: 50px;
+	padding: 0px;
+}
+
+/** FONTS */
+.verybig {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/** COLORS */
+.first_bg {
+ background-color: rgba(0,0,225,0.2);
+}
+
+.second_bg {
+ background-color: rgba(0,0,225,0.3);
+}
+
+.third_bg {
+ background-color: rgba(0,0,225,0.4);
+}

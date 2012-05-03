@@ -17,9 +17,9 @@ In order to use level sets in vmtk you have to use *vmtklevelsetsegmentation:*
 
 Recall that *-ifile* and *-ofile* are ways to access the built-in readers and writers that every script has. The file format is guessed from the filename extension.
 
-First a render window appears displayng the usual image planes. Press q or e to proceed.
+First a render window appears displayng the usual image planes.
 
-A message will appear on your terminal: 
+A message will appear: 
 
      Please choose initialization type: (0: colliding fronts; 1: fast marching; 2: threshold; 3: isosurface)
 
@@ -39,15 +39,15 @@ Continuing on with the example:
 
 Enter *0* to initialize with colliding fronts.
 
-A message will then appear on the terminal: 
+A message will then appear: 
 
-     Please input lower threshold ('i' to activate image, 'n' for none):
+     Please input lower threshold ('n' for none):
 
-Wave propagation can be restricted to a set of intensity levels above a lower threshold and below an upper threshold. This is useful when you don't have a great SNR in you images. The use of such thresholds is optional, and in general they do not influence the location of the final surface. If you don't know what the right threshold is, press i to activate the image and probe it. Quit with q or e when probing is done. Next, enter the value returned by the probe on the terminal. If you don't want to use any threshold, just enter n (give this a try before using thresholds).
+Wave propagation can be restricted to a set of intensity levels above a lower threshold and below an upper threshold. This is useful when you don't have a great SNR in you images. The use of such thresholds is optional, and in general they do not influence the location of the final surface. If you don't know what the right threshold is, press i to activate the image and probe it. Quit with q when probing is done. Next, enter the value returned by the probe on the terminal. If you don't want to use any threshold, just enter n (give this a try before using thresholds).
 
 The next message is: 
 
-     Please input upper threshold ('i' to activate image, 'n' for none):
+     Please input upper threshold ('n' for none):
 
 The above procedure applies here as well.
 
@@ -55,13 +55,11 @@ Next, you'll be prompted with:
 
      Please place two seeds (click on the image while pressing Ctrl).
 
-and the render window will activate.
+Interact with the image planes to find the image plane where you want to place your first seed. When satisfied, press the Ctrl key. While keeping it depressed, left-click the image plane on the point you wish to place the seed at. A red sphere will then appear. Repeat this procedure for the second seed as well. Press q when done.
 
-Interact with the image planes to find the image plane where you want to place your first seed. When satisfied, press the Ctrl key. While keeping it depressed, left-click the image plane on the point you wish to place the seed at. A red sphere will then appear. Repeat this procedure for the second seed as well. Press q or e when done.
+Provided everything went ok, a translucent surface will appear in the render window between the two seeds. This is your initial deformable model. Press q to proceed.
 
-Provided everything went ok, a translucent surface will appear in the render window between the two seeds. This is your initial deformable model. Press q or e to proceed.
-
-You'll be prompted with: 
+You'll be asked: 
 
      Accept initialization? (y/n):
 
@@ -69,7 +67,7 @@ If you reply n, you'll be allowed to perform the initialization once again.
 
 The following message will now appear: 
 
-     Please input parameters (type return to accept current values, 'e' to end, 'q' to quit):
+     Please input parameters (type return to accept current values, 'q' to quit):
      NumberOfIterations(0) [PropagationScaling(1.0) CurvatureScaling(0.0) AdvectionScaling(0.0)]:
 
 These parameters control the deformation of your level set. 
@@ -98,9 +96,7 @@ The level sets will then evolve until the maximum iterations are reached. Progre
 
 If q is entered instead of 300, the script quits, thus piping the resulting level set to the writer. Don't do that unless you made an unrecoverable mistake and you'd like to start over again.
 
-If e is entered instead of 300, the segmentation of the current branch quits and another branch can be started.
-
-To quit the render window press q or e as usual.
+To quit the render window press q as usual.
 
 You'll then be asked: 
 
@@ -114,7 +110,7 @@ You'll then be asked:
 + If n, this branch will be discarded.
 + If y, this branch will be merged with the branches you segmented before. 
 
-The render window will activate showing you the merged result.
+The render window will show you the merged result.
 
 The next (and last) question will be: 
 
@@ -140,13 +136,4 @@ Two points to be made:
 
 That's it.
 
-Don't forget to explore the options that the scripts offer. If you're in doubt, mail us a question, either personally or on the mailing list (see the [vmtk homepage](http://www.vmtk.org/) for details). 
-
-
-
-
-    
-
-
-
-
+Don't forget to explore the options that the scripts offer. If you're in doubt, mail us a question, either personally or on the mailing list (see the [vmtk homepage](http://www.vmtk.org/) for details).

@@ -5,7 +5,7 @@ layout: default
 Generating a Mesh
 =================
 
-*by Carlos Remuzzi, BEng Biomedical Engineering, Freelance Developer, London UK *
+*by Carlos Remuzzi, BEng Biomedical Engineering, Freelance Developer, London UK*
 
 ### How vmtkMeshGenerator works
 The mesh generator for vmtk works by performing two fundamental steps, Surface Remeshing and Volume Meshing. 
@@ -13,6 +13,7 @@ The mesh generator for vmtk works by performing two fundamental steps, Surface R
 ### Surface remeshing
 
 Surface remeshing is performed under the assumption that the surface requires improvement before being used for CFD. In the surface remeshing step, the surface triangle edges are resized according to two alternative methods decided by the user:
+
 - a target edge length is uniformly assigned to the whole surface.
 - a scalar sizing function is adopted to resize the triangles. The scalar sizing function can be of any type, usually the distance of the surface points from the centerline will be adopted.
 
