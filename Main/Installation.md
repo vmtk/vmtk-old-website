@@ -30,12 +30,7 @@ Visit the [PPA on Launchpad](https://launchpad.net/~vmtk-packaging/+archive/ppa)
 <a id="OSX"></a>
 ### Mac OSX packages
 
-There are two different packages for Leopard and Snow Leopard available for [download](http://sourceforge.net/projects/vmtk/files/):
-
-- Leopard: vmtk-0.9.0-osx10.5-i386.dmg
-- Snow Leopard: vmtk-0.9.0-osx10.6-universal.dmg
-
-No binary packages exist for Lion. They will become available as soon as vmtk 1.0 is released.
+There are two different packages for Snow Leopard and Lion, both 64 bit, available for [download](http://sourceforge.net/projects/vmtk/files/).
 
 Once downloaded, just drag the MacOSX package to the Applications folder (or any other location). Double-clicking the package will fire up vmtk within PypePad.
 
@@ -49,7 +44,7 @@ into the .profile file in your home directory and restart a new Terminal (or sta
 and you have access to all vmtkscripts and Python-wrapped vmtk and VTK classes. In addition, the package also contains pre-compiled VTK and ITK libraries and header files to develop their applications in C++.
 
 <a id="Windows"></a>
-### Windows installers
+### Windows 7 installers
 
 After you download the proper architecture (32bit vs 64bit - if in doubt go for 32bit), just run the installer. It will take you through the installation stage, after which you'll find vmtk in your start menu. Click on vmtk, and you'll see PypePad ready for use.
 

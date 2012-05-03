@@ -12,6 +12,10 @@ The Vascular Modeling Toolkit is a collection of libraries and tools for 3D reco
 
 ## News
 
+### Mar 3, 2012: vmtk 1.0.0 released! 
+
+vmtk 1.0.0 has been released! Get the source code on [Github](https://github.com/vmtk/vmtk) or download Mac or Windows binaries, see the [Install](/Main/Installation/) page for details.
+
 ### Mar 12, 2012: New code and tutorial on digital removal of cerebral aneurysms in vmtkApps. 
 
 A new directory has been added to vmtk, called vmtkApps. It will contain application-specific code built on top of vmtk.

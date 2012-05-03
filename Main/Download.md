@@ -7,11 +7,11 @@ Download
 
 ## Download
 
-### vmtk - Latest release (0.9)
+### vmtk - Latest release (1.0.0)
 
 Binary packages
 
-Binary packages are available for Debian, Ubuntu, Mac OSX 10.5 and 10.6 and Windows 32bit and 64bit. Get them [here](http://sourceforge.net/projects/vmtk/files/).
+Binary packages are available for Debian, Ubuntu, Mac OSX 10.6 (Snow Leopard) and 10.7 (Lion) and Windows 7 32bit and 64bit. Get them [on Sourceforge](http://sourceforge.net/projects/vmtk/files/vmtk/1.0/).
 For more details, follow the instructions on the [Installation](/Main/Installation) page.
 
 ### vmtk - Development version
