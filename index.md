@@ -12,9 +12,9 @@ The Vascular Modeling Toolkit is a collection of libraries and tools for 3D reco
 
 ## News
 
-### Mar 4, 2012: vmtk 1.0.0 released! 
+### May 4, 2012: vmtk 1.0.0 released! 
 
-vmtk 1.0.0 has been released! Get the source code on [Github](https://github.com/vmtk/vmtk), download the [zipped source](https://github.com/vmtk/vmtk/tags) or download Mac or Windows binaries. See the [Install](/Main/Installation/) page for details. (Last minute note: Windows binaries will be uploaded on May 7)
+vmtk 1.0.0 has been released! Get the source code on [Github](https://github.com/vmtk/vmtk), download the [zipped source](https://github.com/vmtk/vmtk/tags) or download [Mac or Windows binaries](http://sourceforge.net/projects/vmtk/files/vmtk/1.0/). See the [Install](/Main/Installation/) page for details. (Last minute note: Windows binaries will be uploaded on May 7)
 
 For a list of changes, see the [commit logs](https://github.com/vmtk/vmtk/compare/v0.9.0...v1.0.0).
 
