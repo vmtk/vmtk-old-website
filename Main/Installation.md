@@ -16,7 +16,7 @@ Installation
 - [Mac OSX packages](#OSX)
 - [Windows installers](#Windows)
 
-Binary packages are available thanks to the hard work of Johannes Ring, from [Simula Research Laboratory](http://www.simula.no) and [Kalkulo](http://www.kalkulo.no), Oslo, Norway. The packaging work was funded by [Orobix](http://www.orobix.com).
+Binary packages are supported by [Orobix](http://www.orobix.com). Special thanks to Johannes Ring, [Simula Research Laboratory](http://www.simula.no), Sara Zanchi and Valentina Rossi, University of Bergamo.
 
 <a id="Ubuntu"></a>
 ### Ubuntu packages
@@ -61,7 +61,7 @@ vmtk is cross-platform and will compile and work on Linux, Mac OSX and Windows. 
 
 In order to successfully compile and use vmtk, the following software has to be installed in your system:
 - [Git](http://www.git-scm.org) (>= 1.6)
-- [Python](http://www.python.org) (>=2.5)
+- [Python](http://www.python.org) (>=2.6)
 - [CMake](http://www.cmake.org) (>=2.8)
 - A C++ compiler
 
