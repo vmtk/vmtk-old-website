@@ -65,6 +65,10 @@ In order to successfully compile and use vmtk, the following software has to be 
 - [CMake](http://www.cmake.org) (>=2.8)
 - A C++ compiler
 
+For Ubuntu users, you'll have to install the following packages prior to compiling:
+
+    sudo apt-get install libxt-dev libgl1-mesa-glx libgl1-mesa-dev python-dev
+
 ### Installation
 
 1. Checkout the development version from the official Git repository:
