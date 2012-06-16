@@ -31,7 +31,7 @@ This tool is based on the centerlines of the tubular geometry that is computed w
 It should be noted that prior to computing the centerlines, flow extensions can be added with vmtk for the inlet and outlets of the tubular geometry ,so that the computed centerlines  extend out the inlet and outlets of the input tubular geometry 
 
 The NEW centerline filed of Gmsh takes as input the centerlines in vtk format. 
-For the remeshing with gmsh, a Gmsh script file ( an ASCII text file with a ‘.geo’ extension)  has to be written. 
+For the remeshing with gmsh, a Gmsh script file ( an ASCII text file with a .geo extension) has to be written. 
 
 The first lines of the file.geo file specify the 2D and 3D mesh algorithms as the input STL file: 
 
@@ -65,6 +65,6 @@ As can be seen, three centerline-based operators can be defined: (1)  a close-vo
 Use the command line ''gmsh file.geo -3'' to create the CFD or FSI mesh. 
 The final mesh contains different physical tags: inlet, outlet, wall, lumenVolume (and also for FSI: outerWall, wallVolume, inletRing, outletRings).
  
-Different examples on how to use this Gmsh's Centerline Field can be found on the Gmsh wiki (https://geuz.org/trac/gmsh using 'gmsh' as username and passwd).
+Different examples on how to use this Gmsh's Centerline Field can be found on the [Gmsh wiki](https://geuz.org/trac/gmsh) - use 'gmsh' as username and passwd.
 Questions or suggestions  can be send by email  to : emilie.marchandise@uclouvain.be
 
