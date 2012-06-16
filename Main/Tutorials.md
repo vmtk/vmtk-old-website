@@ -35,7 +35,7 @@ These are a bunch of tutorials on the use of vmtk. The first group is about the 
 
 ## Contributed tutorials
 
-- [Meshing based on centerlines (vmtk+gmsh)](/Tutorials/CenterlinesGmsh/) - learn how to generate tetrahedral or **hexahedral** meshes using vmtk coupled to Gmsh. *Contributed by Emilie Marchandise, U. Louvain*
+- [Meshing based on centerlines (vmtk+gmsh)](/Tutorials/CenterlinesGmsh/) - learn how to generate tetrahedral or **mixed hexahedral** meshes using vmtk coupled to Gmsh. *Contributed by Emilie Marchandise, U. Louvain*
 - [Image feature correction](/Tutorials/ImageFeatureCorrection/) - learn how to correct the feature image in order to have a good surface model near bone and pockets of air. *Contributed by Rob Jansen, Dept. of Biomedical Engineering, Eindhoven University of Technology*
 
 ## Tutorial data

@@ -12,7 +12,7 @@ The Vascular Modeling Toolkit is a collection of libraries and tools for 3D reco
 
 ## News
 
-### June 16, 2012: new [tutorial](/Tutorials/CenterlinesGmsh/) by Emilie Marchandise (thanks Emilie!) on meshing using vmtk and [Gmsh](http://www.geuz.org/gmsh/), featuring the generation all-hex meshes!
+### June 16, 2012: new [tutorial](/Tutorials/CenterlinesGmsh/) by Emilie Marchandise (thanks Emilie!) on meshing using vmtk and [Gmsh](http://www.geuz.org/gmsh/)
 
 ### June 10, 2012: binaries for **all platforms** including Ubuntu packages (thanks to Johannes Ring, Simula, Oslo, Norway for maintaining the Debian vmtk packages) are now available for vmtk 1.0.1
 
