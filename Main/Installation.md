@@ -16,7 +16,7 @@ Installation
 - [Mac OSX packages](#OSX)
 - [Windows installers](#Windows)
 
-Binary packages are supported by [Orobix](http://www.orobix.com). Special thanks to Johannes Ring, [Simula Research Laboratory](http://www.simula.no), Sara Zanchi and Valentina Rossi, University of Bergamo.
+Binary packages are supported by [Orobix](http://www.orobix.com). Special thanks to Johannes Ring, the maintainer of vmtk Debian packages, [Simula Research Laboratory](http://www.simula.no) and to Sara Zanchi and Valentina Rossi, University of Bergamo.
 
 <a id="Ubuntu"></a>
 ### Ubuntu packages
