@@ -8,7 +8,7 @@ Meshing based on centerlines (vmtk+gmsh)
 *by Emilie Marchandise, Universite ́ catholique de Louvain, Institute of Mechanics, Materials and Civil Engineering (iMMC) *
 
 This tutorial demonstrates how to mesh tubular geometries with Gmsh using the centerlines computed with vmtk.
-[Gmsh](www.geuz.org/gmsh/) is an open-source 3D finite element mesh generator. Starting from an STL file (that can be of very ol quality), the NEW ''centerline field'' of Gmsh enables you to automatically create a CFD mesh or FSI mesh for cardiovascular and respiratory flow simulations. 
+[Gmsh](http://www.geuz.org/gmsh/) is an open-source 3D finite element mesh generator. Starting from an STL file (that can be of very ol quality), the NEW ''centerline field'' of Gmsh enables you to automatically create a CFD mesh or FSI mesh for cardiovascular and respiratory flow simulations. 
 
 ![Figure 1](/media/Tutorials/stl_init.png)
 
