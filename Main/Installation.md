@@ -105,12 +105,11 @@ Note that in the above I assume vtk is at version 5.10. It might not be if I for
 Enjoy
 
 
-- Extra note for Windows 7 64 bit users (thanks to Hugo Gratama van Andel)
+### Extra note for Windows 7 64 bit users (thanks to Hugo Gratama van Andel)
 
 Apparently the FindPythonLibs CMake script is not working correctly on Windows 7 64 bit, see:
-[CMake] FindPythonLibs no longer finding Python libs in Windows 7 64 bit http://www.cmake.org/pipermail/cmake/2011-July/045471.html
-and
-[CMake] FindPythonLibs fails inexplicably http://www.cmake.org/pipermail/cmake/2011-November/047820.html
+- [FindPythonLibs no longer finding Python libs in Windows 7 64 bit](http://www.cmake.org/pipermail/cmake/2011-July/045471.html), and
+- [FindPythonLibs fails inexplicably](http://www.cmake.org/pipermail/cmake/2011-November/047820.html)
 
 If your build is throwing errors you can resolve this by editing the the CMakeCache.txt in the .\ VTK-Build\ directory:
 
