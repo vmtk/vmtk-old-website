@@ -91,16 +91,41 @@ Set CMake variables as appropriate (they have sensible defaults), *configure* an
   - For Linux, add these lines to your .bashrc or .bash_profile file (in your home directory):
         VMTKHOME=/path-to-vmtk-build/Install
         export PATH=$VMTKHOME/bin:$PATH
-        export LD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.8:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$LD_LIBRARY_PATH
-        export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.8:$VMTKHOME/lib/vmtk:$PYTHONPATH
+        export LD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$LD_LIBRARY_PATH
+        export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$PYTHONPATH
 
   - For OSX, add these lines to your .profile file (in your home directory):
         VMTKHOME=/path-to-vmtk-build/Install
         export PATH=$VMTKHOME/bin:$PATH
-        export DYLD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.8:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$DYLD_LIBRARY_PATH
-        export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.8:$VMTKHOME/lib/vmtk:$PYTHONPATH
+        export DYLD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$DYLD_LIBRARY_PATH
+        export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$PYTHONPATH
 
-Note that in the above I assume vtk is at version 5.8. It might not be if I forget to update the instructions. Check the directory name if this doesn't work, and please send an email on the mailing list.
+Note that in the above I assume vtk is at version 5.10. It might not be if I forget to update the instructions. Check the directory name if this doesn't work, and please send an email on the mailing list.
 
 Enjoy
+
+
+- Extra note for Windows 7 64 bit users (thanks to Hugo Gratama van Andel)
+
+Apparently the FindPythonLibs CMake script is not working correctly on Windows 7 64 bit, see:
+[CMake] FindPythonLibs no longer finding Python libs in Windows 7 64 bit http://www.cmake.org/pipermail/cmake/2011-July/045471.html
+and
+[CMake] FindPythonLibs fails inexplicably http://www.cmake.org/pipermail/cmake/2011-November/047820.html
+
+If your build is throwing errors you can resolve this by editing the the CMakeCache.txt in the .\ VTK-Build\ directory:
+
+    //Path to a file.
+    PYTHON_INCLUDE_DIR:PATH=PYTHON_INCLUDE_DIR-NOTFOUND
+    change this to the correct path on your system e.g.:
+    PYTHON_INCLUDE_DIR:PATH=C:/Python27/include
+    
+    //Path to a library.
+    PYTHON_LIBRARY:FILEPATH=PYTHON_LIBRARY-NOTFOUND
+    change this to the correct path on your system e.g.:
+    PYTHON_LIBRARY:FILEPATH=C:/Python27/libs/python27.lib
+    
+    //Path to a program.
+    PYTHON_EXECUTABLE:FILEPATH=PYTHON_EXECUTABLE-NOTFOUND
+    change this to the correct path on your system e.g.:
+    PYTHON_EXECUTABLE:FILEPATH=C:/Python27/python.exe
 
