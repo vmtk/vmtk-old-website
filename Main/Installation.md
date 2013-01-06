@@ -60,6 +60,7 @@ vmtk is now based on SuperBuild, a CMake feature that allows to automatically do
 vmtk is cross-platform and will compile and work on Linux, Mac OSX and Windows. Most of the development is performed under Linux and Mac OSX, but feel free to update us on eventual issues on Windows.
 
 In order to successfully compile and use vmtk, the following software has to be installed in your system:
+
 - [Git](http://www.git-scm.org) (>= 1.6)
 - [Python](http://www.python.org) (>= 2.6, < 3.0)
 - [CMake](http://www.cmake.org) (>= 2.8)
@@ -73,14 +74,14 @@ For Ubuntu users, you'll have to install the following packages prior to compili
 
 1. Checkout the development version from the official Git repository:
 
-    git clone https://github.com/vmtk/vmtk.git
+    `git clone https://github.com/vmtk/vmtk.git`
 
 - Create a build directory and cd into it
     mkdir vmtk-build
     cd vmtk-build
 
 - Run CMake with the directory where the vmtk source tree is located as an argument e.g. 
-    ccmake ../vmtk
+    `ccmake ../vmtk`
 or if you use the CMake GUI, point the source path to the vmtk source directory.
 Set CMake variables as appropriate (they have sensible defaults), *configure* and *generate* (for more details look at the [CMake help pages](http://www.cmake.org/cmake/help/runningcmake.html)). Once you're done, you'll find either Makefiles or a Visual Studio solution or an XCode project in the build directory, depending on your platform and compiler.
 
@@ -89,12 +90,14 @@ Set CMake variables as appropriate (they have sensible defaults), *configure* an
 - Set a couple of environment variables. 
 
   - For Linux, add these lines to your .bashrc or .bash_profile file (in your home directory):
+  
         VMTKHOME=/path-to-vmtk-build/Install
         export PATH=$VMTKHOME/bin:$PATH
         export LD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$LD_LIBRARY_PATH
         export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$PYTHONPATH
 
   - For OSX, add these lines to your .profile file (in your home directory):
+  
         VMTKHOME=/path-to-vmtk-build/Install
         export PATH=$VMTKHOME/bin:$PATH
         export DYLD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$DYLD_LIBRARY_PATH
@@ -111,7 +114,7 @@ Apparently the FindPythonLibs CMake script is not working correctly on Windows 7
 - [FindPythonLibs no longer finding Python libs in Windows 7 64 bit](http://www.cmake.org/pipermail/cmake/2011-July/045471.html), and
 - [FindPythonLibs fails inexplicably](http://www.cmake.org/pipermail/cmake/2011-November/047820.html)
 
-If your build is throwing errors you can resolve this by editing the the CMakeCache.txt in the .\ VTK-Build\ directory:
+If your build is throwing errors you can resolve this by editing the CMakeCache.txt file in the .\ VTK-Build\ directory:
 
     //Path to a file.
     PYTHON_INCLUDE_DIR:PATH=PYTHON_INCLUDE_DIR-NOTFOUND
