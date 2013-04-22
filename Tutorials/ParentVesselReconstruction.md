@@ -15,7 +15,7 @@ The algorithm relies on the definition of Voronoi Diagram and on its properties,
 
 ## Requirements
 
-This tutorial is based on three Python scripts located in the vmtkApps directory (vmtk/vmtkApps/CerebralAneurysms/ParentVesselReconstructions).
+This tutorial is based on three Python scripts located in the vmtkApps directory in the source code (vmtk/vmtkApps/CerebralAneurysms/ParentVesselReconstructions). You can get the source code for vmtk at https://github.com/vmtk/vmtk or by downloading a zip archive at https://github.com/vmtk/vmtk/archive/master.zip.
 
 The programs are written make use of VTK and vmtk, which have to be installed for the scripts to run properly. Only the first script requires input data from the user, while the second and third steps read datasets and files created and saved along the various steps.
 
