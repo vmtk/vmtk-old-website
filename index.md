@@ -12,6 +12,10 @@ The Vascular Modeling Toolkit is a collection of libraries and tools for 3D reco
 
 ## News
 
+### Sep 20, 2013: contribution from Down Under
+
+Thanks for David Ladd from the Auckland Bioengineering Institute for his [contribution](https://github.com/vmtk/vmtk/pull/75), which adds suppport for 20 and 27 node hexahedra to the linearToQuadratic filter and more.
+
 ### Aug 27, 2013: mailing list migrated to Google Groups
 
 The vmtk mailing list has migrated to Google Groups. Visit [https://groups.google.com/forum/#!forum/vmtk-users](https://groups.google.com/forum/#!forum/vmtk-users) to access past discussions and post new topics.
