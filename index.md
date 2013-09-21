@@ -12,9 +12,13 @@ The Vascular Modeling Toolkit is a collection of libraries and tools for 3D reco
 
 ## News
 
+### Sep 21, 2013: improved endcapping
+
+Thanks to Martin Sandve Alnaes from Simula, Norway for contributing improvements to capping. Now we can use a mix of methods for different boundaries without losing boundary markers for subsequent meshing.
+
 ### Sep 20, 2013: contribution from Down Under
 
-Thanks for David Ladd from the Auckland Bioengineering Institute for his [contribution](https://github.com/vmtk/vmtk/pull/75), which adds suppport for 20 and 27 node hexahedra to the linearToQuadratic filter and more.
+Thanks to David Ladd from the Auckland Bioengineering Institute for his [contribution](https://github.com/vmtk/vmtk/pull/75), which adds suppport for 20 and 27 node hexahedra to the linearToQuadratic filter and more.
 
 ### Aug 27, 2013: mailing list migrated to Google Groups
 
